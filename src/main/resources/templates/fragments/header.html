@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<header th:fragment="header">
+    <nav style="background:#1e3a5f;padding:12px 28px;display:flex;justify-content:space-between;align-items:center;">
+        <a th:href="@{/bulletins}" style="color:#fff;font-size:1.15rem;font-weight:bold;text-decoration:none;">
+            🎓 SGE — Gestion des Étudiants
+        </a>
+        <div style="display:flex;align-items:center;gap:18px;">
+            <a th:href="@{/etudiants}" style="color:#cde;text-decoration:none;">Étudiants</a>
+            <a th:href="@{/bulletins}"  style="color:#cde;text-decoration:none;">Bulletins</a>
+            <a sec:authorize="hasRole('ADMIN')" th:href="@{/filieres}" style="color:#cde;text-decoration:none;">Filières</a>
+            <a sec:authorize="hasRole('ADMIN')" th:href="@{/modules}"  style="color:#cde;text-decoration:none;">Modules</a>
+            <span style="color:#adf;font-size:0.88rem;">
+                👤 <span sec:authentication="name">user</span>
+            </span>
+        </div>
+    </nav>
+</header>
+</html>

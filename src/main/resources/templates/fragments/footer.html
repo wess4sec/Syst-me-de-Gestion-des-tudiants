@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<footer th:fragment="footer"
+        style="background:#1e3a5f;color:#cde;text-align:center;padding:14px;margin-top:40px;font-size:0.85rem;">
+    <div style="display:flex;justify-content:center;align-items:center;gap:24px;">
+        <span>© 2025–2026 Système de Gestion des Étudiants — DSI2</span>
+        <form th:action="@{/logout}" method="post" style="margin:0;">
+            <button type="submit"
+                    style="background:#c0392b;color:#fff;border:none;padding:6px 16px;
+                           border-radius:4px;cursor:pointer;font-size:0.85rem;">
+                🚪 Déconnexion
+            </button>
+        </form>
+    </div>
+</footer>
+</html>

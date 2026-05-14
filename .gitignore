@@ -1,0 +1,15 @@
+.idea/
+target/
+*.log
+*.class
+*.jar
+*.war
+*.iml
+
+# Local Maven bundle and caches
+maven-mvnd-2.0.0-rc-3-windows-amd64/
+.mvn/
+
+# OS files
+.DS_Store
+Thumbs.db

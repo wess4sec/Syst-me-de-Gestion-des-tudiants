@@ -286,4 +286,3 @@ git push -u origin main
 
 ## License
 
-Use the license that matches your school or personal project needs.
